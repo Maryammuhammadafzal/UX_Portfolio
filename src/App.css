@@ -118,3 +118,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-border {
+  -webkit-text-stroke: 1px #c5c5c5; /* Creates the border */
+  color: transparent;               /* Optional: transparent fill for hollow look */
+}
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xs: 23rem;
+}
