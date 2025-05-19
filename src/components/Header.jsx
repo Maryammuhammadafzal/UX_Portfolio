@@ -42,7 +42,7 @@ once: true,
 
         {window.innerWidth >= 768 ? (
           <nav className="w-auto h-auto flex justify-center items-center">
-            <ul className="w-auto h-auto flex justify-center items-center gap-10">
+            <ul className="w-auto h-auto flex justify-center items-center gap-10 max-lg:gap-5">
               {nav_data.map(({ nav_link, nav_name }) => (
                 <li className="w-fit p-1">
                   <a href="/" className="text-2xl max-lg:text-xl cursor-pointer focus:font-semibold hover:font-semibold font-medium">
@@ -53,7 +53,7 @@ once: true,
             </ul>
           </nav>
         ) : (
-          <IoIosMenu size={30} />
+          <IoIosMenu size={40} />
         )}
       </div>
     </div>
