@@ -25,11 +25,11 @@ const Footer = () => {
   ];
   return (
     <div className="w-full h-auto flex justify-center items-center py-10">
-      <div className="w-[90%] h-auto p-3 flex flex-col justify-center items-center">
+      <div className="w-[90%] max-lg:w-[96%] h-auto p-3 flex flex-col justify-center items-center">
         {/* Footer */}
-        <div className="content flex  max-md:flex-col justify-between items-start gap-10">
+        <div className="content flex  max-sm:flex-col max-[900px]:flex-wrap  justify-between items-start gap-10">
           {/* Section 1 */}
-          <div className="w-[30%] flex flex-col gap-3">
+          <div className="w-[35%] max-[900px]:w-[50%] max-sm:w-full  flex flex-col gap-3">
             <div className="logo w-auto h-auto">
               <img
                 src={Logo}
@@ -37,22 +37,22 @@ const Footer = () => {
                 alt="logo UX pert"
               />
             </div>
-            <p className="text-[16px]">
+            <p className="text-[16px] max-lg:text-sm max-sm:text-xs">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
               recusandae corporis rerum maxime provident excepturi autem
               officiis sed! Tempora dignissimos cupiditate blanditiis modi ab
               suscipit, eaque perferendis totam tempore molestias!
             </p>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col max-[900px]:w-[40%] max-sm:w-full gap-3">
             <h4 className="text-cyan-500 text-xl font-bold">Quick Links</h4>
-            <nav className="w-auto h-auto flex justify-center items-center">
+            <nav className="w-auto h-auto flex items-center">
               <ul className="w-auto h-auto flex flex-col justify-center gap-3">
                 {nav_data.map(({ nav_link, nav_name }) => (
                   <li className="w-fit p-1">
                     <a
                       href="/"
-                      className="text-lg max-lg:text-[16px] cursor-pointer focus:font-semibold hover:font-semibold font-medium"
+                      className="text-lg max-lg:text-[16px] max-sm:text-sm cursor-pointer focus:font-semibold hover:font-semibold font-medium"
                     >
                       {nav_name}
                     </a>
@@ -61,9 +61,9 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="contact w-[30%] gap-3 flex flex-col">
+          <div className="contact max-[900px]:w-[90%] w-[30%] gap-3 max-sm:w-full flex flex-col">
                 <h4 className="text-cyan-500 text-xl font-bold">Contact Information</h4>
-                <ul className="flex flex-col gap-3">
+                <ul className="flex flex-col gap-3 max-sm:text-sm">
                         <li>4517 Washington Ave. Manchester, Kentucky 39495</li>
                         <li>jessica.hanson@example.com</li>
                         <li>(308) 555-0121</li>
@@ -71,14 +71,14 @@ const Footer = () => {
           </div>
         </div>
         {/* Copy Right */}
-        <div className="copyright flex max-md:flex-col justify-between p-3 items-center w-full">
-          <p className="text-[16px]">
+        <div className="copyright flex max-md:flex-col max-md:gap-3 pt-6 justify-between items-center w-full">
+          <p className="max-lg:text-xs max-xl:text-sm">
             © 2021 all copyright reserved. All Rights Reserved.
           </p>
-          <ul className="flex gap-6 justify-center items-center">
-            <li>Terms of Services</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
+          <ul className="flex gap-6 max-lg:gap-3 justify-center items-center">
+            <li className="max-lg:text-xs max-xl:text-sm">Terms of Services</li>
+            <li className="max-lg:text-xs max-xl:text-sm">Privacy Policy</li>
+            <li className="max-lg:text-xs max-xl:text-sm">Cookie Policy</li>
           </ul>
         </div>
       </div>
