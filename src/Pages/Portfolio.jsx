@@ -40,7 +40,7 @@ const Portfolio = () => {
   ];
   return (
     <div className="w-full h-auto flex max-xl:py-3 justify-center items-center">
-      <div className="w-[90%] h-auto flex gap-3 justify-center flex-col max-md:space-y-5 items-center">
+      <div className="w-[90%] max-lg:w-[95%] h-auto flex gap-3 justify-center flex-col max-md:space-y-5 items-center">
         <div className="heading mb-4">
           <Heading
             frontText="My Work"
@@ -48,7 +48,7 @@ const Portfolio = () => {
             textSize="text-5xl"
           />
         </div>
-        <div className="portfolio w-full grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-10 justify-center items-center">
+        <div className="portfolio w-full grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-10 justify-center items-center">
           {portfolio_data.map(
             (
               {
@@ -62,7 +62,7 @@ const Portfolio = () => {
             ) => (
               <Card
                 key={index}
-                className="portfolioCard bg-[#f2ecec] shadow-lg max-md:max-w-[330px] max-md:mx-auto text-black rounded-lg pt-0"
+                className={`portfolioCard bg-[#f2ecec] shadow-lg max-lg:max-w-[440px] max-md:mx-auto text-black rounded-lg pt-0 ${index === 2 && "max-xl:hidden"}`}
               >
                 <CardHeader className="px-0">
                   <img
@@ -71,24 +71,24 @@ const Portfolio = () => {
                     className="w-full h-[250px] object-fill rounded-lg"
                   />
                 </CardHeader>
-                <CardContent>
-                  <div className="flex flex-col gap-4">
+                <CardContent className="max-sm:px-2">
+                  <div className="flex flex-col gap-4 ">
                     <h2 className="font-bold text-2xl">{project_title}</h2>
                     <div className="flex justify-between items-center">
-                      <p className="text-sm">
+                      <p className="text-sm max-sm:text-xs">
                         <span className="font-semibold">Category: </span>
                         {project_category}
                       </p>
-                      <p className="text-sm">
+                      <p className="text-sm max-sm:text-xs">
                         <span className="font-semibold">Tools Used: </span>
                         {project_tools}
                       </p>
                     </div>
-                    <p className="text-[16px]"><span className="font-semibold">Overview: </span> {project_description}</p>
+                    <p className="text-[16px] max-sm:text-sm"><span className="font-semibold">Overview: </span> {project_description}</p>
                   </div>
                 </CardContent>
-                <CardFooter>
-                  <Button className="bg-cyan-500 mt-10 flex gap-2 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
+                <CardFooter  className="max-sm:px-2">
+                  <Button className="bg-cyan-500 mt-2 flex gap-2 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
                     View Project <FaArrowRightLong />
                   </Button>
                 </CardFooter>
