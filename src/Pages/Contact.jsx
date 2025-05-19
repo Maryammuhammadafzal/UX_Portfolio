@@ -56,7 +56,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-          <Card className="w-[35%] max-lg:w-[58%] max-md:w-full max-lg:max-w-[535px] max-lg:ml-0  ml-4 px-4 py-10">
+          <Card className="w-[35%] shadow-2xs max-lg:w-[58%] max-md:w-full max-lg:max-w-[535px] max-lg:ml-0  ml-4 px-4 py-10">
             <CardContent className="space-y-11">
               <Input
                 type="text"
