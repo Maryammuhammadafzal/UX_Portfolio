@@ -27,11 +27,11 @@ const Contact = () => {
             textSize="text-5xl"
           />
         </div>
-        <div className="flex max-md:flex-col justify-center items-end w-full h-auto gap-3 mt-3">
+        <div className="flex max-lg:flex-col justify-center min-lg:items-end items-center w-full h-auto gap-3 mt-3">
           {/* Card */}
-          <div className="card w-[50%] max-xl:w-[55%] h-auto flex justify-end items-end ">
-            <div className="businessCard p-3 max-w-[708px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px] max-xl:h-[300px]">
-              <div className="content w-[55%] flex flex-col gap-2 p-3">
+          <div className="card w-[55%] max-lg:w-full max-2xl:w-[55%] h-auto flex min-lg:justify-end justify-center items-end ">
+            <div className="businessCard p-3 max-lg:max-w-[535px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px] max-lg:h-[500px]">
+              <div className="content w-[60%] flex flex-col gap-2 p-3">
                 <h2 className="text-2xl font-bold">
                   Let’s Build Something Great Together!
                 </h2>
@@ -39,7 +39,7 @@ const Contact = () => {
                   Ready to bring your ideas to life? Whether you have a project
                   in mind or just want to chat about design, I’m here to help.
                 </p>
-                <div className="socialLink w-full gap-3 mt-5 px-2 flex text-cyan-400">
+                <div className="socialLink w-full gap-3 mt-3 px-2 flex text-cyan-400">
                   <IoLogoFacebook size={25} />
                   <IoLogoTwitter size={25} />
                   <IoLogoLinkedin size={25} />
@@ -56,7 +56,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-          <Card className="w-[35%] max-xl:w-[40%] ml-4 px-4 py-10">
+          <Card className="w-[35%] max-lg:w-[58%] max-md:w-full max-lg:max-w-[535px] max-lg:ml-0  ml-4 px-4 py-10">
             <CardContent className="space-y-11">
               <Input
                 type="text"
