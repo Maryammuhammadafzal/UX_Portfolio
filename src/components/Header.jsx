@@ -35,17 +35,17 @@ once: true,
   ];
   return (
     <div className="w-[75%] max-lg:w-[95%] max-lg:justify-center h-auto flex justify-start items-center py-6">
-      <div data-aos="fade-down" className="w-full ml-25 h-[100px] max-lg:ml-10 flex justify-between items-center">
-        <div className="logo w-[20%] h-auto">
-          <img src={Logo} className="w-[130px] h-[40px] max-md:w-[110px] max-md:h-[30px]" alt="logo UX pert" />
+      <div data-aos="fade-down" className="w-full ml-35 h-[70px] max-lg:ml-10 flex justify-between items-center">
+        <div className="logo w-auto h-auto">
+          <img src={Logo} className="w-[160px] h-[45px] max-md:w-[110px] max-md:h-[30px]" alt="logo UX pert" />
         </div>
 
         {window.innerWidth >= 768 ? (
           <nav className="w-auto h-auto flex justify-center items-center">
-            <ul className="w-auto h-auto flex justify-center items-center gap-5">
+            <ul className="w-auto h-auto flex justify-center items-center gap-10">
               {nav_data.map(({ nav_link, nav_name }) => (
                 <li className="w-fit p-1">
-                  <a to="/" className="text-xl font-medium">
+                  <a href="/" className="text-2xl max-lg:text-xl cursor-pointer focus:font-semibold hover:font-semibold font-medium">
                     {nav_name}
                   </a>
                 </li>

@@ -33,7 +33,7 @@ const Home = () => {
                 John Smith
               </h1>
 
-              <h2 className="text-7xl font-bold tracking-wide max-xs:text-4xl  max-xl:text-6xl  max-lg:text-[45px] max-2xs:text-3xl max-2xs:leading-9 max-lg:leading-15 max-sm:leading-12 max-xs:text-9 text-[#0F172A] z-10 leading-25 font-['Sunflower']">Welcome To John's Creative Space</h2>
+              <h2 className="text-7xl font-extrabold tracking-wide max-xs:text-4xl  max-xl:text-6xl  max-lg:text-[45px] max-2xs:text-3xl max-2xs:leading-9 max-lg:leading-15 max-sm:leading-12 max-xs:text-9 text-[#0F172A] z-10 leading-25 font-['Sunflower']">Welcome To John's Creative Space</h2>
             </div>
             <p className="text-xl max-lg:text-[16px] max-sm:text-sm max-2xs:text-xs font-normal pr-5">
               Crafting Seamless Digital Experiences. Designing intuitive
@@ -55,9 +55,9 @@ const Home = () => {
               <img
                 src={Vector}
                 alt="Vector"
-                className="-z-10 absolute top-40 left-0 max-lg:top-28 max-xl:top-35"
+                className="-z-10 absolute top-50 left-0 max-lg:top-28 max-xl:top-35"
               />
-              <img src={HeroImage} alt="Hero Image" className="" />
+              <img src={HeroImage} alt="Hero Image" className="w-[550px]" />
               <div className="eclipes absolute bg-gradient-to-tl from-cyan-900 to- to-sky-300  w-[250px] h-[250px] blur-[130px] rounded-full "></div>
             </div>
           </div>

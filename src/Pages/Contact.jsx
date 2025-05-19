@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   return (
     <div className="w-full mb-5 h-auto flex max-xl:py-3 justify-center items-center">
-      <div className="w-[90%] max-xl:w-full h-auto flex gap-4 justify-center flex-col max-md:space-y-5 items-center">
+      <div className="w-[80%] max-xl:w-full h-auto flex gap-4 justify-center flex-col max-md:space-y-5 items-center">
         <div className="heading w-full mb-4">
           <Heading
             frontText="Get In Touch"
@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-end w-full h-auto gap-3 mt-3">
           {/* Card */}
-          <div className="card w-[60%] h-auto flex justify-end items-end ">
+          <div className="card w-[50%] h-auto flex justify-end items-end ">
             <div className="businessCard p-3 max-w-[658px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px]">
               <div className="content w-[55%] flex flex-col gap-2 p-3">
                 <h2 className="text-2xl font-bold">
