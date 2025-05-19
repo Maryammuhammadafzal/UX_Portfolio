@@ -12,6 +12,7 @@ import Skills from "./Skills";
 import Process from "./Process";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 const Home = () => {
   useEffect(() => {
     Aos.init({
@@ -68,6 +69,7 @@ const Home = () => {
       <Process />
       <Services />
       <Portfolio />
+      <Contact />
     </div>
   );
 };
