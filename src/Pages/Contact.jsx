@@ -4,10 +4,22 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io5";
 import Heading from "@/components/Heading";
 import CardImage from "../assets/bussiness-card-image.png";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Button } from "@/components/ui/button";
+
 const Contact = () => {
   return (
     <div className="w-full mb-5 h-auto flex max-xl:py-3 justify-center items-center">
-      <div className="w-[85%] max-xl:w-full h-auto flex gap-4 justify-center flex-col max-md:space-y-5 items-center">
+      <div className="w-[90%] max-xl:w-full h-auto flex gap-4 justify-center flex-col max-md:space-y-5 items-center">
         <div className="heading w-full mb-4">
           <Heading
             frontText="Get In Touch"
@@ -15,7 +27,8 @@ const Contact = () => {
             textSize="text-5xl"
           />
         </div>
-        <div className="flex justify-center items-center w-full h-auto gap-3">
+        <div className="flex justify-center items-end w-full h-auto gap-3 mt-3">
+          {/* Card */}
           <div className="card w-[60%] h-auto flex justify-end items-end ">
             <div className="businessCard p-3 max-w-[658px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px]">
               <div className="content w-[55%] flex flex-col gap-2 p-3">
@@ -33,10 +46,51 @@ const Contact = () => {
                 </div>
               </div>
               <div className="cardImage w-auto h-auto">
-                <img src={CardImage} alt="bussiness card image" className=" absolute -right-5 bottom-0 w-[320px] h-[469px]" />
+                <img
+                  src={CardImage}
+                  alt="bussiness card image"
+                  className=" absolute -right-5 bottom-0 w-[320px] h-[469px]"
+                />
               </div>
             </div>
           </div>
+
+          {/* Form */}
+          <Card className="w-[35%] ml-4 px-4 py-10">
+            <CardContent className="space-y-11">
+              <Input
+                type="text"
+                placeholder="Name"
+                name="name"
+                className="bg-neutral-200 py-6 px-4"
+              />
+              <Input
+                type="email"
+                placeholder="Email"
+                name="email"
+                className="bg-neutral-200 py-6 px-4"
+              />
+              <Input
+                type="number"
+                placeholder="Phone Number"
+                name="number"
+                className="bg-neutral-200 py-6 px-4"
+              />
+              <Input
+                type="text"
+                placeholder="Message"
+                name="message"
+                min="0"
+                max="100"
+                className="bg-neutral-200 py-6 px-4"
+              />
+            </CardContent>
+            <CardFooter className="w-full flex justify-center">
+              <Button className="bg-cyan-500 mt-6 flex gap-2 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
+                Send Message <FaArrowRightLong />
+              </Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </div>
