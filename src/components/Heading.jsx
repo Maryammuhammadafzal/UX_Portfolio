@@ -12,7 +12,7 @@ const Heading = ({backText , frontText , textSize , left}) => {
         let headingClass = `${textSize} font-bold tracking-wide max-md:text-[48px] max-sm:text-[36px]  max-2xs:text-[32px]  text-[#0F172A] z-10  font-["Work Sans"]`
   return (
     <div className="relative flex justify-center items-center">
-      <h1 data-aos="zoom-in" className={`text-[90px] text-center text-border max-sm:text-6xl max-sm:-top-9 max-xl:text-[80px] max-2xs:text-[35px] font-['Work Sans'] font-bold absolute max-lg:-top-16 max-md:-top-14 -top-16 ${left} select-none`}>
+      <h1 data-aos="zoom-in" className={`text-[90px] text-center text-border max-sm:text-6xl max-sm:-top-9 max-xs:-top-8 max-xl:text-[80px] max-2xs:text-[50px] font-['Work Sans'] font-bold absolute max-lg:-top-16 max-md:-top-14 -top-18 ${left} select-none`}>
         {backText}
       </h1>
 

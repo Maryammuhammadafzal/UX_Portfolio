@@ -8,6 +8,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Intro from "./Intro";
 import About from "./About";
+import Skills from "./Skills";
+import Process from "./Process";
+import Services from "./Services";
+import Portfolio from "./Portfolio";
 const Home = () => {
   useEffect(() => {
     Aos.init({
@@ -16,7 +20,7 @@ const Home = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-20 overflow-hidden">
       <div className="w-full my-10 h-auto flex justify-center items-center">
         <div className="w-[90%] h-auto flex justify-center max-md:flex-col items-center">
           <div
@@ -24,7 +28,7 @@ const Home = () => {
             className="left-content max-md:w-[90%] max-md:px-10 max-sm:px-0 w-[55%] max-xs:w-full flex flex-col gap-7 justify-center "
           >
             <div className="relative flex justify-center items-center">
-              <h1 data-aos="zoom-in" className="text-[100px] text-border max-xs:text-[50px] max-xl:text-[80px] max-lg:text-[60px] max-lg:-top-10 max-2xs:text-[45px] font-['Work Sans'] font-bold absolute -top-15 left-0 select-none">
+              <h1 data-aos="zoom-in" className="text-[100px] text-border max-xs:text-[50px] max-xl:text-[80px] max-lg:text-[60px] max-lg:-top-10 max-2xs:text-[45px] font-['Work Sans'] font-bold absolute -top-18 left-0 select-none">
                 John Smith
               </h1>
 
@@ -36,7 +40,7 @@ const Home = () => {
               something amazing together
             </p>
             <div>
-              <Button className="bg-cyan-500  px-10 rounded-full max-xs:text-xs">
+              <Button className="bg-cyan-500 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
                 Explore My Work <FaArrowRightLong />{" "}
               </Button>
             </div>
@@ -60,6 +64,10 @@ const Home = () => {
       </div>
       <Intro />
       <About />
+      <Skills />
+      <Process />
+      <Services />
+      <Portfolio />
     </div>
   );
 };

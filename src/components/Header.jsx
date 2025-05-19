@@ -34,7 +34,7 @@ once: true,
     },
   ];
   return (
-    <div className="w-[75%] max-lg:w-[95%] max-lg:justify-center h-auto flex justify-start items-center my-6">
+    <div className="w-[75%] max-lg:w-[95%] max-lg:justify-center h-auto flex justify-start items-center py-6">
       <div data-aos="fade-down" className="w-full ml-25 h-[100px] max-lg:ml-10 flex justify-between items-center">
         <div className="logo w-[20%] h-auto">
           <img src={Logo} className="w-[130px] h-[40px] max-md:w-[110px] max-md:h-[30px]" alt="logo UX pert" />

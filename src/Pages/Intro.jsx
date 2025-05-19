@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Intro = () => {
   return (
-    <div className="w-full py-10 my-10 h-auto flex justify-center items-center">
+    <div className="w-full my-6 pt-10 h-auto flex justify-center items-center">
       <div className="w-[55%] max-lg:w-[70%] max-md:w-[85%] h-auto flex justify-center max-md:flex-col items-center">
         <div
           data-aos="fade-up"
@@ -24,7 +24,7 @@ const Intro = () => {
             transform ideas into impactful digital experiences.
           </p>
           <div>
-            <Button className="bg-cyan-500  px-10 rounded-full max-xs:text-xs">
+            <Button className="bg-cyan-500 flex gap-2 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
               More About Me <FaArrowRightLong />{" "}
             </Button>
           </div>

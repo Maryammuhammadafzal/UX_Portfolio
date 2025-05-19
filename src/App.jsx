@@ -6,7 +6,7 @@ function App() {
   
 
   return (
-    <div className="w-full h-auto ">
+    <div className="w-full h-auto">
       <Header />
       <Home/>
      {/* <Button>Click me</Button> */}

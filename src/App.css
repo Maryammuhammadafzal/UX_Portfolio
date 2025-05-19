@@ -121,10 +121,29 @@
 
 .text-border {
   -webkit-text-stroke: 1px #c5c5c5; /* Creates the border */
-  color: transparent;               /* Optional: transparent fill for hollow look */
+  color: transparent; /* Optional: transparent fill for hollow look */
 }
 
 @theme {
   --breakpoint-xs: 30rem;
   --breakpoint-2xs: 23rem;
+}
+
+/* hide-scrollbar custom class */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.processCard:hover {
+  background-image: url(./assets/process-card-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  color: white;
 }
