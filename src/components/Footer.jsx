@@ -52,7 +52,7 @@ const Footer = () => {
                 {nav_data.map(({ nav_link, nav_name }) => (
                   <li key={nav_name} className="w-fit p-1">
                     <Link
-                      to={nav_link}
+                      to="/"
                       className="text-lg max-lg:text-[16px] max-sm:text-sm cursor-pointer focus:font-semibold hover:font-semibold font-medium"
                     >
                       {nav_name}

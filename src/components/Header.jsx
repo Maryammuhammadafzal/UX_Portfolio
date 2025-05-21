@@ -45,8 +45,8 @@ once: true,
           <nav className="w-auto h-auto flex justify-center items-center">
             <ul className="w-auto h-auto flex justify-center items-center gap-10 max-lg:gap-5">
               {nav_data.map(({ nav_link, nav_name }) => (
-                <li key={nav_name} className="w-fit p-1">
-                  <Link to={nav_link} className="text-2xl max-lg:text-xl cursor-pointer focus:font-semibold hover:font-semibold font-medium">
+                <li key={nav_name} className="w-fit">
+                  <Link to={nav_link} className="text-2xl max-lg:text-xl w-auto h-auto p-1 cursor-pointer focus:font-semibold hover:font-semibold font-medium">
                     {nav_name}
                   </Link>
                 </li>
