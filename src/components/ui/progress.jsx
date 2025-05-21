@@ -1,5 +1,7 @@
 import * as React from "react"
 import * as ProgressPrimitive from "@radix-ui/react-progress"
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import { cn } from "@/lib/utils"
 
@@ -18,7 +20,8 @@ function Progress({
       {...props}>
       <ProgressPrimitive.Indicator
         data-slot="progress-indicator"
-        className="bg-primary h-full w-full flex-1 transition-all"
+        data-aos="fade-right"
+        className="bg-cyan-400 h-full w-full flex-1 transition-all"
         style={{ transform: `translateX(-${100 - (value || 0)}%)` }} />
     </ProgressPrimitive.Root>)
   );

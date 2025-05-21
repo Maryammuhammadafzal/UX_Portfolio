@@ -147,3 +147,14 @@
   opacity: 0.8;
   color: white;
 }
+.b-card{
+  perspective: 1000px;
+}
+.businessCard {
+  transition: transform 0.6s ease-out;
+  transform-style: preserve-3d;
+}
+
+.businessCard:hover{
+  transform: rotateY(180deg);
+}

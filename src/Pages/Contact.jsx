@@ -29,8 +29,10 @@ const Contact = () => {
         </div>
         <div className="flex max-lg:flex-col justify-center min-lg:items-end items-center w-full h-auto gap-3 mt-3">
           {/* Card */}
-          <div className="card w-[55%] max-lg:w-full max-2xl:w-[55%] h-auto flex min-lg:justify-end justify-center items-end ">
-            <div className="businessCard p-3 max-lg:max-w-[535px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px] max-lg:h-[500px]">
+          <div className="b-card w-[55%] max-lg:w-full max-2xl:w-[55%] h-auto flex min-lg:justify-end justify-center items-end ">
+            <div
+              className="businessCard p-3 max-lg:max-w-[535px] rounded-lg shadow-2xs relative overflow-visible border border-neutral-100 bg-neutral-100 flex justify-between gap-2 w-full h-[250px] max-lg:h-[500px]"
+            >
               <div className="content w-[60%] flex flex-col gap-2 p-3">
                 <h2 className="text-2xl font-bold">
                   Let’s Build Something Great Together!
@@ -98,3 +100,6 @@ const Contact = () => {
 };
 
 export default Contact;
+//  data-aos="flip-left"
+//               data-aos-easing="ease-out-cubic"
+//               data-aos-duration="2000"
