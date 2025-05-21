@@ -3,6 +3,7 @@ import Logo from "../assets/logo.png";
 import { IoIosMenu } from "react-icons/io";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import { Link } from "react-router";
 const Header = () => {
   useEffect(() => {
 Aos.init({
@@ -17,19 +18,19 @@ once: true,
       nav_name: "Home",
     },
     {
-      nav_link: "/",
+      nav_link: "/about",
       nav_name: "About",
     },
     {
-      nav_link: "/",
+      nav_link: "/services",
       nav_name: "Services",
     },
     {
-      nav_link: "/",
+      nav_link: "/portfolio",
       nav_name: "Portfolio",
     },
     {
-      nav_link: "/",
+      nav_link: "/contact",
       nav_name: "Contact Us",
     },
   ];
@@ -44,10 +45,10 @@ once: true,
           <nav className="w-auto h-auto flex justify-center items-center">
             <ul className="w-auto h-auto flex justify-center items-center gap-10 max-lg:gap-5">
               {nav_data.map(({ nav_link, nav_name }) => (
-                <li className="w-fit p-1">
-                  <a href="/" className="text-2xl max-lg:text-xl cursor-pointer focus:font-semibold hover:font-semibold font-medium">
+                <li key={nav_name} className="w-fit p-1">
+                  <Link to={nav_link} className="text-2xl max-lg:text-xl cursor-pointer focus:font-semibold hover:font-semibold font-medium">
                     {nav_name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -6,12 +6,21 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import PortfolioImage1 from "../assets/portfolio-image1.png"
-import PortfolioImage2 from "../assets/portfolio-image2.png"
-import PortfolioImage3 from "../assets/portfolio-image3.png"
+import PortfolioImage1 from "../assets/portfolio-image1.png";
+import PortfolioImage2 from "../assets/portfolio-image2.png";
+import PortfolioImage3 from "../assets/portfolio-image3.png";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const Portfolio = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  });
   const portfolio_data = [
     {
       project_image: PortfolioImage1,
@@ -62,13 +71,16 @@ const Portfolio = () => {
             ) => (
               <Card
                 key={index}
-                className={`portfolioCard bg-[#f2ecec] shadow-lg max-lg:max-w-[440px] max-md:mx-auto text-black rounded-lg pt-0 ${index === 2 && "max-xl:hidden"}`}
+                className={`portfolioCard bg-[#f2ecec] shadow-lg max-lg:max-w-[440px] max-md:mx-auto text-black rounded-lg pt-0 ${
+                  index === 2 && "max-xl:hidden"
+                }`}
               >
                 <CardHeader className="px-0">
                   <img
+                    data-aos="zoom-in"
                     src={project_image}
                     alt={project_title}
-                    className="w-full h-[250px] object-fill rounded-lg"
+                    className="w-full h-[250px] object-fill rounded-lg hover:animate-zoom"
                   />
                 </CardHeader>
                 <CardContent className="max-sm:px-2">
@@ -84,10 +96,13 @@ const Portfolio = () => {
                         {project_tools}
                       </p>
                     </div>
-                    <p className="text-[16px] max-sm:text-sm"><span className="font-semibold">Overview: </span> {project_description}</p>
+                    <p className="text-[16px] max-sm:text-sm">
+                      <span className="font-semibold">Overview: </span>{" "}
+                      {project_description}
+                    </p>
                   </div>
                 </CardContent>
-                <CardFooter  className="max-sm:px-2">
+                <CardFooter className="max-sm:px-2">
                   <Button className="bg-cyan-500 mt-2 flex gap-2 has-[>svg]:px-5 py-3 text-lg rounded-full max-xs:text-xs">
                     View Project <FaArrowRightLong />
                   </Button>

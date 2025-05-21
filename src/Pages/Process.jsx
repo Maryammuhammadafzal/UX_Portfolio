@@ -48,7 +48,7 @@ const Process = () => {
         <div className="skills w-full grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-10 justify-center items-center">
           {design_process_data.map(
             ({ process_icon, process_name, process_description }, index) => (
-              <Card className="processCard bg-[#f2ecec] shadow-lg max-md:max-w-[330px] max-md:mx-auto text-black">
+              <Card key={index} className="processCard bg-[#f2ecec] shadow-lg max-md:max-w-[330px] max-md:mx-auto text-black">
                 <CardContent className="h-[200px] flex justify-center items-center flex-col gap-3 text-center">
                   <img src={process_icon} alt={process_name} className="w-10 h-10" />
                   <h2 className="font-bold text-2xl">{process_name}</h2>

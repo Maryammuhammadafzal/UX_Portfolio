@@ -127,6 +127,17 @@
 @theme {
   --breakpoint-xs: 30rem;
   --breakpoint-2xs: 23rem;
+
+    --animate-zoom: zoom 0.3s ease-in-out forwards;
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
 }
 
 /* hide-scrollbar custom class */
@@ -147,14 +158,20 @@
   opacity: 0.8;
   color: white;
 }
-.b-card{
+.businessCard {
+  transform-style: preserve-3d;
   perspective: 1000px;
 }
-.businessCard {
-  transition: transform 0.6s ease-out;
-  transform-style: preserve-3d;
-}
 
-.businessCard:hover{
+.businessCard:hover {
   transform: rotateY(180deg);
 }
+
+.card-face {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
