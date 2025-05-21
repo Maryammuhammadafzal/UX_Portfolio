@@ -9,7 +9,7 @@ import {
 import ResearchIcon from "../assets/research-icon.png"
 import IdeaIcon from "../assets/idea-icon.png"
 import WireframeIcon from "../assets/Web Design.png"
-import PrototypeIcon from "../assets/prototype.png"
+import PrototypeIcon from "../assets/Prototype.png"
 import React from "react";
 
 const Process = () => {
