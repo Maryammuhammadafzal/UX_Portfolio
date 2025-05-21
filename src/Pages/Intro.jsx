@@ -11,11 +11,11 @@ const Intro = () => {
           data-aos="fade-up"
           className="left-content w-full flex flex-col gap-7 justify-center items-center"
         >
+
           <Heading
             frontText="Introduction"
             backText="Introduction"
             textSize="text-6xl"
-            left="-left-30"
           />
           <p className="text-lg max-md:text-[16px] max-sm:text-sm max-2xs:text-xs text-center font-normal">
             I’m [Your Name], a passionate UI/UX Designer dedicated to creating

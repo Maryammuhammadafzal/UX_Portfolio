@@ -27,9 +27,9 @@ const Contact = () => {
             textSize="text-5xl"
           />
         </div>
-        <div className="flex max-lg:flex-col justify-center min-lg:items-end items-center w-full h-auto gap-3 mt-3">
-          <div className="b-card w-[55%] max-lg:w-full max-2xl:w-[55%] h-auto flex min-lg:justify-end justify-center items-end">
-            <div className="businessCard relative w-full h-[250px] max-lg:h-[500px] preserve-3d transition-transform duration-500 hover:rotate-y-180">
+        <div className="flex max-lg:flex-col justify-center min-lg:items-end items-center w-full h-auto gap-3 mt-3 px-2">
+          <div className="b-card w-[55%] max-lg:w-full max-2xl:w-[55%] h-auto flex min-lg:justify-end  justify-center items-end">
+            <div className="businessCard relative w-full h-[250px] max-lg:h-[500px] preserve-3d transition-transform duration-500 hover:rotate-y-180 max-lg:flex max-lg:justify-center">
               {/* Front Side */}
               <div className="card-face front absolute w-full h-full backface-hidden p-3 max-lg:max-w-[535px] rounded-lg shadow-2xs border border-neutral-100 bg-neutral-100 flex justify-between gap-2">
                 <div className="content w-[60%] flex flex-col gap-2 p-3">
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-          <Card className="w-[35%] shadow-2xs max-lg:w-[58%] max-md:w-full max-lg:max-w-[535px] max-lg:ml-0  ml-4 px-4 py-10">
+          <Card className="w-[35%] shadow-2xs max-lg:w-full max-md:w-full max-lg:max-w-[535px] max-lg:ml-0  ml-4 px-4 py-10">
             <CardContent className="space-y-11">
               <Input
                 type="text"
